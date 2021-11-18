@@ -1,0 +1,44 @@
+.boost__links {
+  background-color: $darkViolet;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  //background-image: url('../images/bg-boost-mobile.svg');
+  background-position: -16px -13px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(360px) {
+   // background-image: url('../images/bg-boost-desktop.svg');
+    background-position: -16px 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 1.3rem;
+      font-size: 2.3rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    background-color: $cyan;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: $font-weight-heavy;
+    padding: 1rem 2.5rem;
+    text-transform: capitalize;
+    border-radius: 30px;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
